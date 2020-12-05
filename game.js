@@ -50,7 +50,7 @@ const jump=(e)=>{
    }  
 document.addEventListener('keypress',jump)
 
-// cheack Dead
+// check Dead
  let checkDead=setInterval(() => {
     let friendTop=window.getComputedStyle(friend).getPropertyValue("top")
     let enemyLeft=window.getComputedStyle(enemy).getPropertyValue("left")
