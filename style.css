@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.block{
+        width: 500px;
+        height: 200px;
+        border: 5px solid black;
+        margin: auto;
+        margin-top: 100px;
+        overflow: hidden;
+        position: relative;
+
+}
+.friend{
+    width: 20px;
+    height: 50px;
+    background-color: yellow;
+    border: 5px solid green ;
+    box-sizing: border-box;
+    position: relative;
+    top: 150px;
+}
+.annimate{
+    animation: jump 1s  infinite linear ;
+    -webkit-animation: jump 500ms  infinite linear ;
+}
+.enemy{
+    width: 20px;
+    height: 20px;
+    background-color:black ;
+    border: 5px solid red ;
+    box-sizing: border-box;
+    position: relative;
+    top: 130px;
+    left:480px;
+    /* animation:attac 2s infinite linear ;
+    -webkit-animation:attac 2s infinite linear ; */
+}
+@keyframes attac{
+    0%{left: 480px;}
+    100%{left:-40px}
+}
+@keyframes jump{
+    0%{top:150px}
+    50%{top: 100px;}
+    100%{top: 150px;}
+}
+.lose{
+    color:yellow;
+    position: absolute;
+    font-size: large;
+    font-weight: bold;
+    top:60px;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+.replay{
+    position: absolute;
+    top:100px;
+    left: 230px;
+}
